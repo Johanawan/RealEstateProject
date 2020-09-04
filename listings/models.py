@@ -26,7 +26,7 @@ class Listing(models.Model):
     photo_5 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
     photo_6 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
     is_published = models.BooleanField(default=True)
-    list_date = models.DateTimeField(default=datetime.now, blank=True)
+    list_date = models.DateField(default=datetime.now, blank=True)
 
     # Make title the main field to display
 
